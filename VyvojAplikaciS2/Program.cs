@@ -211,7 +211,7 @@ while (a >= 0)
 
 }
 */
-
+/*
 //string vstup;
 int vystup;
 Console.Write("=> ");
@@ -238,12 +238,20 @@ do
     vystup2--;
 } while (vystup2 > 0);
 //do-while
+*/
+
 
 for (int i = 10; i > 0; i--)
 {
-    Console.WriteLine(i);
+    if (i == 8) continue;
+    else if (i == 3) break;
+    else Console.WriteLine(i);
+    
+    //... some code
 }
 
+
+/*
 int[] pole = new int[3];
 pole[0] = 1;
 pole[1] = 2;
@@ -257,7 +265,7 @@ for (int b = 0; b < pole.Length; b++)
 {
     Console.WriteLine(pole[b]);
 }
-/*
+
  Pouze cela prirozena cisla 
 1 - soucet
 2 - pocet
@@ -266,7 +274,20 @@ for (int b = 0; b < pole.Length; b++)
 5 - minCislo
 
 OVERIT VSTUP
+
+
+Faktoriál
+
+!4
+
+4 * 3 * 2 * 1
+
+
+
+// <0,3)
+int d = new Random().Next(0, 3);
  */
+
 
 Console.WriteLine();
 Console.Write("Pro ukončení stiskni enter..");
